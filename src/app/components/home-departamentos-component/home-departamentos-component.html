@@ -1,0 +1,19 @@
+<h3>Lista departamentos</h3>
+<table border="1" class="table table-borderer">
+<thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Localidad</th>
+        </tr>
+</thead>
+<tbody>
+@for(departamento of arraydepartamentos; track departamento){
+    <tr>
+        <td>{{departamento.idDepartamento}}</td>
+        <td>{{departamento.nombre}}</td>
+        <td>{{departamento.localidad}}</td>
+    </tr>    
+}
+</tbody>
+</table>

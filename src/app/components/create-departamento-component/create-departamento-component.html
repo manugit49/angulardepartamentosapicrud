@@ -1,0 +1,19 @@
+<h3>Nuevo departamento</h3>
+<form #form="ngForm">
+    <div class="form-field">
+        <label>Id:</label>
+        <input type="number" name="cajaid" #cajaid/>
+    </div>
+    <div class="form-field">
+        <label>Nombre:</label>
+        <input type="text" name="cajanombre" #cajanombre/>
+    </div>
+    <div class="form-field">
+        <label>Localidad:</label>
+        <input type="text" name="cajalocalidad" #cajalocalidad/>
+    </div>
+    <button (click)="insertarDepartamento()">
+        Insertar
+    </button>
+</form>
+<h2 style="color: blue;">{{mensaje}}</h2>

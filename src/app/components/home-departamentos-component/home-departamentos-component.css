@@ -12,6 +12,14 @@ thead tr th {
   text-align: left;
 }
 
+/* Última columna (acciones): ancho mínimo para ajustarse al contenido de los enlaces */
+thead tr th:last-child,
+tbody td:last-child {
+  width: 1px;
+  white-space: nowrap;
+  padding-right: 0;
+}
+
 /* Estilo para filas pares (índice par) del tbody: fondo gris */
 tbody tr:nth-child(even) td {
   background-color: #f2f2f2;
@@ -20,9 +28,4 @@ tbody tr:nth-child(even) td {
 /* Estilo opcional para filas impares para contraste */
 tbody tr:nth-child(odd) td {
   background-color: white;
-}
-
-/* Padding general para celdas */
-td, th {
-  padding: 8px 12px;
 }

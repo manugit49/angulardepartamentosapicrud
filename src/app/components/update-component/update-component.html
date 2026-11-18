@@ -1,0 +1,12 @@
+<h1 style="color: red;">
+    {{mensaje}}
+</h1>
+<form #form="ngForm">
+    Nombre:
+    <input type="text" name="cajanombre" #cajanombre class="form-control"/>
+    Localidad:
+    <input type="text" name="cajalocalidad" #cajalocalidad class="form-control"/>
+    <button class="btn btn-warning" (click)="modificarDepartamento()">
+    Modificar
+</button>
+</form>
